@@ -56,8 +56,8 @@ VALUES ("Jason","Grito ultra sônico","Tampão na boca",5,5);
 INSERT INTO tb_personagens (nome,poder,ponto_fraco,inteligencia,classe_id)
 VALUES ("Lili","Veneno","Antidoto que corta o veneno",10,6);
 
-INSERT INTO tb_personagens (nome,poder,ponto_fraco,inteligencia,classe_id)
-VALUES ("Lua","Escuridão","Dia ou luz",5,17);tb_classes
+INSERT INTO tb_personagens (nome,poder,ponto_fraco,inteligencia,classe_id) 
+VALUES ("Lua","Escuridão","Dia ou luz",5,7);
 
 INSERT INTO tb_personagens (nome,poder,ponto_fraco,inteligencia,classe_id)
 VALUES ("Gueicha","Força","Kriptonita",10,8);
