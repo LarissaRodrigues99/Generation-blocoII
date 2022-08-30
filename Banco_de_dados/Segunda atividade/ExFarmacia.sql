@@ -25,7 +25,7 @@ FOREIGN KEY (categoria_id) REFERENCES tb_categorias(id)
 
 );
 
-SELECT * FROM tb_categorias;
+SELECT * FROM db_farmacia_bem_estar.tb_categorias;
 
 INSERT INTO tb_categorias (nome,numero_do_cracha,funcionario_disponivel) VALUES ("Jakeline Silva",0025,true);
 
@@ -37,7 +37,13 @@ INSERT INTO tb_categorias (nome,numero_do_cracha,funcionario_disponivel) VALUES 
 
 INSERT INTO tb_categorias (nome,numero_do_cracha,funcionario_disponivel) VALUES ("Junior Leal",0029,false);
 
-SELECT * FROM tb_produtos;
+INSERT INTO tb_categorias (nome,numero_do_cracha,funcionario_disponivel) VALUES ("Ana Katarina", 0050,true);
+
+INSERT INTO tb_categorias (nome,numero_do_cracha,funcionario_disponivel) VALUES ("Victoria Nascimento", 0055,true);
+
+INSERT INTO tb_categorias (nome,numero_do_cracha,funcionario_disponivel) VALUES ("João da Silva",0056,true);
+
+SELECT * FROM db_farmacia_bem_estar.tb_produtos;
 
 INSERT INTO tb_produtos (remedio,produtos_de_higiene,produtos_para_bebes,estoque,valor,categoria_id) 
 VALUES ("Dorflex","Fiu dental","Fralda",true,50,1);
@@ -55,10 +61,10 @@ INSERT INTO tb_produtos (remedio,produtos_de_higiene,produtos_para_bebes,estoque
 VALUES("Descongestionante nasal","Nenhum","Pomada",true,35,5);
 
 INSERT INTO tb_produtos (remedio,produtos_de_higiene,produtos_para_bebes,estoque,valor,categoria_id)
-VALUES("Nenhum","Nenhum","Lencinho umedecido",false,9,10);
+VALUES("Nenhum","Nenhum","Lencinho umedecido",false,9,6);
 
 INSERT INTO tb_produtos (remedio,produtos_de_higiene,produtos_para_bebes,estoque,valor,categoria_id)
-VALUES ("Nenhum","Fiu dental","Nenhum",true,2,6);
+VALUES ("Nenhum","Fiu dental","Nenhum",true,2,7);
 
 INSERT INTO tb_produtos (remedio,produtos_de_higiene,produtos_para_bebes,estoque,valor,categoria_id)
 VALUES ("Nenhum","Nenhum","Nenhum",false,1,8);
