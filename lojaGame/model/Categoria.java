@@ -10,7 +10,6 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
 
 
 
@@ -28,11 +27,9 @@ public class Categoria {
 	private int nivel;
 	
 	@NotNull(message = "O atributo personagem é obrigatório!")
-	@Size (min = 10, max = 1000, message = "O atributo personagem deve conter no mínimo 10 e no máximo 1000 letras")
 	private String personagem;
 	
 	@NotNull(message = "O atributo força é obrigatório!")
-	@Size (min = 10, max = 1000, message = "O atributo força deve conter no mínimo 10 e no máximo 1000 letras")
 	private String forca;
 	
 	@NotNull
